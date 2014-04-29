@@ -25,15 +25,22 @@
             "run_at":"document_idle"
         }
     ],
+    "icons": {
+        "16": "icon16.png",
+        "48": "icon48.png",
+        "128": "icon128.png"
+    },
     "permissions":[
         "tabs",
         "<all_urls>"
     ],
+    "web_accessible_resources": [
+        "/js/jquery-1.9.1.min.js"
+    ],
     "converted_from_user_script":true,
     "description":"Control XBMC's YouTube plugin.",
     "minimum_chrome_version":"13",
-    "key":"YKe14wmHa8KrJZHwf4FDYiXz6EydZQRZKLJtI0942rU=",
-    "name":"YouTube XBMC Control + lawrencealan mod for new youtube (2013)",
+    "name":"YouTube XBMC Control",
     "options_page":"html/options.html",
     "description":"Play Youtube videos on your TV using XBMC",
     "version":"0.6",

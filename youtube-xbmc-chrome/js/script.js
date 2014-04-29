@@ -127,8 +127,8 @@ var xbmc_youtube = {
 
     },
     handleClick:function (ev) {
-        if (ev.target.hasOwnProperty("data-itemid")) {
-            var $o = $(ev.target);
+        var $o = $(ev.target);
+        if ($o.data('itemid')) {
             var host = $o.data('host');
             var item_id = $o.data('itemid');
             var item_type = $o.data('itemtype');
@@ -182,7 +182,7 @@ var xbmc_youtube = {
         }
     },
     run:function () {
-        $('document')
+        $('body')
             .not('.moddtct')
             .addClass('moddtct')
             .bind("click", _xby.handleClick);
